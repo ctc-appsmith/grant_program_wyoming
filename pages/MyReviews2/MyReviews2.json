@@ -29,36 +29,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "MyReviews2_getApplicants",
-              "name": "getApplicants",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "MyReviews2_getApps",
-              "name": "getApps",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "MyReviews2_generalSelectQuery",
-              "name": "generalSelectQuery",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "myReview_table.selectedRow.appID"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "MyReviews2_SelectQuery",
               "name": "SelectQuery",
               "confirmBeforeExecute": false,
@@ -79,6 +49,46 @@
               ],
               "timeoutInMillisecond": 10000
             },
+            {
+              "id": "MyReviews2_getApplicants",
+              "name": "getApplicants",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "MyReviews2_getApps",
+              "name": "getApps",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "MyReviews2_SelectQuery_Prequal",
+              "name": "SelectQuery_Prequal",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "myPrequalReview_Table.selectedRow.reviewID"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "MyReviews2_generalSelectQuery",
+              "name": "generalSelectQuery",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "myReview_table.selectedRow.appID"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
             {
               "id": "MyReviews2_getEmp",
               "name": "getEmp",
@@ -110,18 +120,6 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "MyReviews2_SelectQuery_Prequal",
-              "name": "SelectQuery_Prequal",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "myPrequalReview_Table.selectedRow.reviewID"
               ],
               "timeoutInMillisecond": 10000
             }

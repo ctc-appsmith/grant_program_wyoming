@@ -29,6 +29,82 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "PrequalificationPage_SelectQuery",
+              "name": "SelectQuery",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "data_table.searchText || \"\""
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "PrequalificationPage_preQualSelectQuery",
+              "name": "preQualSelectQuery",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "data_table.selectedRow.applicantID"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "PrequalificationPage_PrequalReview_Select",
+              "name": "PrequalReview_Select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "data_table.selectedRow.applicantID"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "PrequalificationPage_QASelectQuery",
+              "name": "QASelectQuery",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "data_table.selectedRow.applicantID",
+                "CategorySlider1.value"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "PrequalificationPage_SelectPrequalQuestions_query",
+              "name": "SelectPrequalQuestions_query",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "data_table.selectedRow.applicantID",
+                "CategorySlider1.value"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "PrequalificationPage_getApplicantCallLog",
+              "name": "getApplicantCallLog",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "data_table.selectedRow.applicantID"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "PrequalificationPage_preQualSelectQuery2",
+              "name": "preQualSelectQuery2",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "data_table.selectedRow.applicantID"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "PrequalificationPage_PrequalReview_Select_Applicant",
               "name": "PrequalReview_Select_Applicant",
               "confirmBeforeExecute": false,
@@ -58,16 +134,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "PrequalificationPage_SelectQuery",
-              "name": "SelectQuery",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "data_table.searchText || \"\""
-              ],
               "timeoutInMillisecond": 10000
             },
             {
@@ -103,71 +169,9 @@
                 "appsmith.store.access_token"
               ],
               "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "PrequalificationPage_preQualSelectQuery",
-              "name": "preQualSelectQuery",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "data_table.selectedRow.applicantID"
-              ],
-              "timeoutInMillisecond": 10000
             }
           ],
           [
-            {
-              "id": "PrequalificationPage_PrequalReview_Select",
-              "name": "PrequalReview_Select",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "data_table.selectedRow.applicantID"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "PrequalificationPage_QASelectQuery",
-              "name": "QASelectQuery",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "CategorySlider1.value",
-                "data_table.selectedRow.applicantID"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "PrequalificationPage_SelectPrequalQuestions_query",
-              "name": "SelectPrequalQuestions_query",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "CategorySlider1.value",
-                "data_table.selectedRow.applicantID"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "PrequalificationPage_getApplicantCallLog",
-              "name": "getApplicantCallLog",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "data_table.selectedRow.applicantID"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "PrequalificationPage_preQualSelectQuery2",
-              "name": "preQualSelectQuery2",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "data_table.selectedRow.applicantID"
-              ],
-              "timeoutInMillisecond": 10000
-            },
             {
               "id": "PrequalificationPage_unauth_redirect.redirect",
               "name": "unauth_redirect.redirect",
