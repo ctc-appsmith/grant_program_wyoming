@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "unauth_redirect",
+    "pageId": "Report_Reviews",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Report_Reviews_unauth_redirect",
+  "deleted": false,
+  "gitSyncId": "65bd14d46a813f5d1501a3bc_660c13a916a31d53cf0d6c9a"
+}

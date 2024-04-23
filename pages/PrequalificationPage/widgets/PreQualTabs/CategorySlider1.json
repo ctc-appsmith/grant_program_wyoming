@@ -1,0 +1,77 @@
+{
+    "mobileBottomRow": 6,
+    "widgetName": "CategorySlider1",
+    "dynamicPropertyPathList": [],
+    "displayName": "Category Slider",
+    "iconSVG": "/static/media/icon.f4e7e4a6fc4a57659f2d2e736486e335.svg",
+    "labelText": "",
+    "searchTags": ["range"],
+    "topRow": 0,
+    "bottomRow": 6,
+    "parentRowSpace": 10,
+    "labelWidth": 5,
+    "type": "CATEGORY_SLIDER_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 49,
+    "defaultOptionValue": "9",
+    "animateLoading": true,
+    "parentColumnSpace": 12.510009765625,
+    "dynamicTriggerPathList": [{"key": "onChange"}],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [{"key": "accentColor"}],
+    "shouldTruncate": false,
+    "labelPosition": "Top",
+    "options": [
+        {
+            "label": "Financial",
+            "value": "9"
+        },
+        {
+            "label": "Organization",
+            "value": "10"
+        },
+        {
+            "label": "Certifications",
+            "value": "11"
+        },
+        {
+            "label": "Labor/Employment",
+            "value": "12"
+        },
+        {
+            "label": "Risk",
+            "value": "13"
+        },
+        {
+            "label": "Ownership",
+            "value": "14"
+        },
+        {
+            "label": "Curing Request",
+            "value": "15"
+        }
+    ],
+    "labelStyle": "",
+    "labelTextColor": "#b91c1c",
+    "isDisabled": false,
+    "key": "c2704yuc1d",
+    "labelTextSize": "1rem",
+    "isDeprecated": false,
+    "rightColumn": 63,
+    "onChange": "{{QASelectQuery.run();\nSelectPrequalQuestions_query.run()}}",
+    "widgetId": "5xdrsj0kys",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "isVisible": true,
+    "sliderSize": "m",
+    "shouldScroll": false,
+    "version": 1,
+    "parentId": "ky2rivb6xs",
+    "tags": ["Sliders"],
+    "labelAlignment": "left",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 0,
+    "responsiveBehavior": "fill",
+    "mobileLeftColumn": 9,
+    "showMarksLabel": true
+}

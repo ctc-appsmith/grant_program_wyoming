@@ -1,0 +1,4 @@
+SELECT COUNT(*) AS overdueCount FROM Applicant
+WHERE DATEDIFF(NOW(), created) > 7
+AND applicantStatus IN (1,2,3)
+;

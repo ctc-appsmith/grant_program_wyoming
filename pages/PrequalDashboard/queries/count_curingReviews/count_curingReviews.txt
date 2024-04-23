@@ -1,0 +1,2 @@
+SELECT COUNT(applicantID) AS curingCount FROM Applicant
+WHERE applicantStatus = "Curing";

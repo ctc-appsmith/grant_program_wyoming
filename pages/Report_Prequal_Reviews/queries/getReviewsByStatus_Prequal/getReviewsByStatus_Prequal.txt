@@ -1,0 +1,4 @@
+SELECT preQualReviews.reviewStatus, Count(preQualReviews.applicantID) AS CountOfappID
+FROM preQualReviews
+GROUP BY preQualReviews.reviewStatus;
+ 

@@ -1,0 +1,6 @@
+SELECT applicationStatusTypes.appStatusType AS statusType, Count(Applicant.applicantID) AS countStatustype
+FROM Applicant INNER JOIN applicationStatusTypes ON Applicant.applicantStatus = applicationStatusTypes.appStatusID
+GROUP BY applicationStatusTypes.appStatusType;
+
+
+

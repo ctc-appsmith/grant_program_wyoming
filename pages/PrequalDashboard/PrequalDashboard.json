@@ -1,0 +1,151 @@
+{
+  "unpublishedPage": {
+    "name": "PrequalDashboard",
+    "slug": "prequaldashboard",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1160,
+          "containerStyle": "none",
+          "snapRows": 78,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 87,
+          "minHeight": 800,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "PrequalDashboard_get_user",
+              "name": "get_user",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.access_token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "PrequalDashboard_Applicant_by_Status",
+              "name": "Applicant_by_Status",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "PrequalDashboard_count_review_subsection",
+              "name": "count_review_subsection",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "PrequalDashboard_Select_ReviewStatus_Query",
+              "name": "Select_ReviewStatus_Query",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "PrequalDashboard_count_ApprovedApplicants",
+              "name": "count_ApprovedApplicants",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "PrequalDashboard_count_OverdueApplicants",
+              "name": "count_OverdueApplicants",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "PrequalDashboard_count_RejectedApplicants",
+              "name": "count_RejectedApplicants",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "PrequalDashboard_count_Summit_Final",
+              "name": "count_Summit_Final",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "PrequalDashboard_count_applicants",
+              "name": "count_applicants",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "PrequalDashboard_count_completedReviews",
+              "name": "count_completedReviews",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "PrequalDashboard_count_curingReviews",
+              "name": "count_curingReviews",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "PrequalDashboard_unauth_redirect.redirect",
+              "name": "unauth_redirect.redirect",
+              "collectionId": "PrequalDashboard_unauth_redirect",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  try {\n    await get_user.run();\n  } catch (err) {\n    if (get_user.data.code == 401) {\n      showAlert(`User is not authenticated or session has expired.`, 'warning');\n      showAlert(`Please login again.`, 'warning');\n    } else {\n      showAlert(`${err.message}!`, 'error');\n      showAlert(`${get_user.responseMeta.statusCode}`, 'error');\n      showAlert(`${get_user.data.msg}`, 'error');\n    }\n    ;\n    navigateTo('Login Page');\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "PrequalDashboard",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "65bd14d46a813f5d1501a3bc_65bd14d46a813f5d1501a416"
+}

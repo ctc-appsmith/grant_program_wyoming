@@ -1,0 +1,3 @@
+SELECT ReviewTypes.reviewType, Count(Reviews.appID) AS CountOfappID
+FROM Reviews INNER JOIN ReviewTypes ON Reviews.reviewType = ReviewTypes.requiredReviewID
+GROUP BY ReviewTypes.reviewType;

@@ -1,0 +1,18 @@
+INSERT INTO Applicant (ApplicantName,applicantAddress,primaryFirstName,primaryLastName,primaryTitle,primaryEmail,primaryPhone,aorFirstName,aorLastName,aorTitle,aorEmail,aorPhone,created,lastChanged,lastChangedBy) 
+VALUES (
+	'{{(insertApplicant_form.formData || {}).ApplicantName}}',
+	'{{(insertApplicant_form.formData || {}).applicantAddress}}',
+	'{{(insertApplicant_form.formData || {}).primaryFirstName}}',
+	'{{(insertApplicant_form.formData || {}).primaryLastName}}',
+	'{{(insertApplicant_form.formData || {}).primaryTitle}}',
+	'{{(insertApplicant_form.formData || {}).primaryEmail}}',
+	'{{(insertApplicant_form.formData || {}).primaryPhone}}',
+	'{{(insertApplicant_form.formData || {}).aorFirstName}}',
+	'{{(insertApplicant_form.formData || {}).aorLastName}}',
+	'{{(insertApplicant_form.formData || {}).aorTitle}}',
+	'{{(insertApplicant_form.formData || {}).aorEmail}}',
+	'{{(insertApplicant_form.formData || {}).aorPhone}}',
+	'{{(insertApplicant_form.formData || {}).created}}',
+	'{{(insertApplicant_form.formData || {}).lastChanged}}',
+	'{{get_user.data.email}}')
+	;

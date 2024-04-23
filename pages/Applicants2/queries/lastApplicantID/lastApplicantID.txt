@@ -1,0 +1,4 @@
+SELECT applicantID FROM Applicant
+	WHERE applicantID = (
+		SELECT MAX(applicantID) FROM Applicant)
+;

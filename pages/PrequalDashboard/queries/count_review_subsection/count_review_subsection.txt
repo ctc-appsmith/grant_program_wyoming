@@ -1,0 +1,5 @@
+SELECT preQualReviewTypes.reviewType AS reviewType, Count(preQualReviews.reviewID) AS CountOfreviewID
+FROM preQualReviews INNER JOIN preQualReviewTypes ON preQualReviews.reviewType = preQualReviewTypes.requiredReviewID
+GROUP BY preQualReviewTypes.reviewType, preQualReviews.reviewStatus
+HAVING (((preQualReviews.reviewStatus)<>"Complete"));
+

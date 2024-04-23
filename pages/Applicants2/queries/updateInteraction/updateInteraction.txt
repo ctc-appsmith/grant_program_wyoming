@@ -1,0 +1,10 @@
+UPDATE applicantCommunication SET
+		spokeWith = '{{Form1.isVisible ? Form1.data.Input1 : Form1.data.Input1}}',	
+		commsDate = '{{Form1.isVisible ? Form1.data.DatePicker1 : Form1.data.DatePicker1}}',
+		commsType = '{{Form1.isVisible ? Form1.data.Select1 : Form1.data.Select1}}',
+		subject = '{{Form1.isVisible ? Form1.data.Select2 : Form1.data.Select2}}',
+		notes = '{{Form1.isVisible ? Form1.data.Input6 : Form1.data.Input6}}',
+		staff = '{{appsmith.user.username}}',
+		lastchangedBy = '{{get_user.data.email}}'
+		
+WHERE recordID = {{appcalllog_tbl.selectedRow.recordID}};

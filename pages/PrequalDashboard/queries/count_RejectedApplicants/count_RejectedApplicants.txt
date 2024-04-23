@@ -1,0 +1,3 @@
+SELECT COUNT (applicantID) AS countApplicants FROM Applicant
+WHERE applicantStatus = 8
+;

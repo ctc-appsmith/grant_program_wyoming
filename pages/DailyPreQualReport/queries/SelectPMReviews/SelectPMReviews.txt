@@ -1,0 +1,2 @@
+SELECT Applicant.ApplicantName, preQualReviewTypes.reviewType, preQualReviewQuestions.question, preQualReviewAnswers.answer, preQualReviewAnswers.notes
+FROM ((preQualReviewAnswers INNER JOIN Applicant ON preQualReviewAnswers.applicantID = Applicant.applicantID) INNER JOIN preQualReviewQuestions ON preQualReviewAnswers.questionID = preQualReviewQuestions.questionID) INNER JOIN preQualReviewTypes ON preQualReviewQuestions.reviewType = preQualReviewTypes.requiredReviewID;

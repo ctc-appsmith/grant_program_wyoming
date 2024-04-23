@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "logout",
+    "pageId": "Applicants2",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Applicants2_logout",
+  "deleted": false,
+  "gitSyncId": "65bd14d46a813f5d1501a3bc_65cd37956a813f5d1501db6c"
+}

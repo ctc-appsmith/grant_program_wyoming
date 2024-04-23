@@ -1,0 +1,4 @@
+SELECT preQualReviews.assignedTo, Applicant.ApplicantName, preQualReviewTypes.reviewType, preQualReviews.reviewStatus, Applicant.applicantID, preQualReviews.reviewID, preQualReviews.pmReview, preQualReviews.reviewNotes
+FROM preQualReviewTypes INNER JOIN (Applicant INNER JOIN preQualReviews ON Applicant.applicantID = preQualReviews.applicantID) ON preQualReviewTypes.requiredReviewID = preQualReviews.reviewType
+WHERE (((Applicant.applicantID)={{data_table.selectedRow.applicantID}}))
+ORDER BY Applicant.ApplicantName;

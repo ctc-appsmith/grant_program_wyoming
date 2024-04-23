@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "DailyPreQualReport",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "DailyPreQualReport_utils",
+  "deleted": false,
+  "gitSyncId": "65bd14d46a813f5d1501a3bc_6605e3fa16a31d53cf0d4562"
+}

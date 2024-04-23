@@ -1,0 +1,7 @@
+INSERT INTO preQualReviewAnswers ( applicantID, reviewID, questionID )
+SELECT {{data_table.selectedRow.applicantID}} AS applicantID, {{lastReviewID.data[0].reviewID}} AS reviewID, preQualReviewQuestions.questionID
+
+
+FROM preQualReviewQuestions INNER JOIN preQualReviews ON preQualReviews.reviewType = preQualReviewQuestions.reviewType
+
+WHERE reviewID = {{lastReviewID.data[0].reviewID}};

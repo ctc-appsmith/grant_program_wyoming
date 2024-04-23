@@ -1,0 +1,4 @@
+SELECT Reviews.reviewStatus, Count(Reviews.appID) AS CountOfappID
+FROM Reviews
+GROUP BY Reviews.reviewStatus;
+ 

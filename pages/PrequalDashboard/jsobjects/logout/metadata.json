@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "logout",
+    "pageId": "PrequalDashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "PrequalDashboard_logout",
+  "deleted": false,
+  "gitSyncId": "65bd14d46a813f5d1501a3bc_65cd37ec6a813f5d1501dc21"
+}

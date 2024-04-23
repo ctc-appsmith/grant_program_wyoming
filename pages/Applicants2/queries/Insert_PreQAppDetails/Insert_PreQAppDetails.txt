@@ -1,0 +1,4 @@
+INSERT INTO preQualAnswers ( questionID, applicantID )
+SELECT PreQualQuestions.preQualQuestionID, {{lastApplicantID.data[0].applicantID}} AS applicantID
+FROM PreQualQuestions
+;

@@ -1,0 +1,4 @@
+UPDATE Applicant SET
+		applicantStatus = {{Select1.selectedOptionValue}},
+		lastChangedBy = {{get_user.data.email}}
+WHERE applicantID = {{data_table.selectedRow.applicantID}};

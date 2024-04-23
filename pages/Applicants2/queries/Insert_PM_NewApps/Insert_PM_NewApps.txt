@@ -1,0 +1,4 @@
+INSERT INTO preQualReviews ( applicantID, reviewType, reviewStatus, assignedTo, lastChangedBy )
+SELECT {{lastApplicantID.data[0].applicantID}}, "20", "Pending", "pcampbell@ctcnet.us", {{get_user.data.email}}
+
+;

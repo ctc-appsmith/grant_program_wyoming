@@ -1,0 +1,5 @@
+SELECT Applicant.*, applicationStatusTypes.appStatusType
+FROM applicationStatusTypes RIGHT JOIN Applicant ON applicationStatusTypes.appStatusID = Applicant.applicantStatus
+WHERE ApplicantName like '%{{data_table.searchText || ""}}%'
+ORDER BY ApplicantName ASC;
+

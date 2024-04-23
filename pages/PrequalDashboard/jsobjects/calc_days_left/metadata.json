@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "calc_days_left",
+    "pageId": "PrequalDashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "PrequalDashboard_calc_days_left",
+  "deleted": false,
+  "gitSyncId": "65d4e7af6a813f5d1501ffa4_65f1faca6a813f5d150299ed"
+}

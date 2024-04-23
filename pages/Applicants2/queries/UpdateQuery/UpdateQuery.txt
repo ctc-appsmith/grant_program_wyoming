@@ -1,0 +1,21 @@
+UPDATE Applicant SET
+		ApplicantName = '{{update_form.fieldState.ApplicantName.isVisible ? update_form.formData.ApplicantName : update_form.sourceData.ApplicantName}}',	
+			applicantStatus = '{{update_form.fieldState.applicantStatus.isVisible ? update_form.formData.applicantStatus : update_form.sourceData.applicantStatus}}',	
+		applicantAddress = '{{update_form.fieldState.applicantAddress.isVisible ? update_form.formData.applicantAddress : update_form.sourceData.applicantAddress}}',
+		primaryFirstName = '{{update_form.fieldState.primaryFirstName.isVisible ? update_form.formData.primaryFirstName : update_form.sourceData.primaryFirstName}}',
+		primaryLastName = '{{update_form.fieldState.primaryLastName.isVisible ? update_form.formData.primaryLastName : update_form.sourceData.primaryLastName}}',
+		primaryTitle = '{{update_form.fieldState.primaryTitle.isVisible ? update_form.formData.primaryTitle : update_form.sourceData.primaryTitle}}',
+ 	primaryEmail = '{{update_form.fieldState.primaryEmail.isVisible ? update_form.formData.primaryEmail : update_form.sourceData.primaryEmail}}',
+		primaryPhone = '{{update_form.fieldState.primaryPhone.isVisible ? update_form.formData.primaryPhone : update_form.sourceData.primaryPhone}}',
+		aorFirstName = '{{update_form.fieldState.aorFirstName.isVisible ? update_form.formData.aorFirstName : update_form.sourceData.aorFirstName}}',
+		aorLastName = '{{update_form.fieldState.aorLastName.isVisible ? update_form.formData.aorLastName : update_form.sourceData.aorLastName}}',
+		aorTitle = '{{update_form.fieldState.aorTitle.isVisible ? update_form.formData.aorTitle : update_form.sourceData.aorTitle}}',
+		aorEmail = '{{update_form.fieldState.aorEmail.isVisible ? update_form.formData.aorEmail : update_form.sourceData.aorEmail}}',
+		aorPhone = '{{update_form.fieldState.aorPhone.isVisible ? update_form.formData.aorPhone : update_form.sourceData.aorPhone}}',
+		amplifund_appID = '{{update_form.fieldState.amplifund_appID.isVisible ? update_form.formData.amplifund_appID : update_form.sourceData.amplifund_appID}}',
+		amplifund_appOrganization = '{{update_form.fieldState.amplifund_appOrganization.isVisible ? update_form.formData.amplifund_appOrganization : update_form.sourceData.amplifund_appOrganization}}',
+		amplifund_projectName = '{{update_form.fieldState.amplifund_projectName.isVisible ? update_form.formData.amplifund_projectName : update_form.sourceData.amplifund_projectName}}',
+		folderLink = '{{update_form.fieldState.folderLink.isVisible ? update_form.formData.folderLink : update_form.sourceData.folderLink}}',
+		curingDate = '{{update_form.fieldState.curingDate.isVisible ? update_form.formData.curingDate : update_form.sourceData.curingDate}}',
+		lastChangedBy = '{{get_user.data.email}}'
+WHERE applicantID = {{data_table.selectedRow.applicantID}};

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "unauth_redirect",
+    "pageId": "SummaryPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "SummaryPage_unauth_redirect",
+  "deleted": false,
+  "gitSyncId": "65bd14d46a813f5d1501a3bc_660c130b16a31d53cf0d6be9"
+}

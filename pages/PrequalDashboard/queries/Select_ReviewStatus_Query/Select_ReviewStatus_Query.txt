@@ -1,0 +1,6 @@
+SELECT reviewStatus AS Status,
+	COUNT(reviewID) as Count 
+		FROM preQualReviews
+			GROUP BY reviewStatus 
+;
+

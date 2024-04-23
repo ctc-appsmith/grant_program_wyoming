@@ -1,0 +1,3 @@
+SELECT preQualReviewTypes.reviewType, Count(preQualReviews.applicantID) AS CountOfappID
+FROM preQualReviews INNER JOIN preQualReviewTypes ON preQualReviews.reviewType = preQualReviewTypes.requiredReviewID
+GROUP BY preQualReviewTypes.reviewType;

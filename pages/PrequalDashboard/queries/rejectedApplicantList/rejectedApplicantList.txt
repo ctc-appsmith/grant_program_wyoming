@@ -1,0 +1,2 @@
+SELECT ApplicantName FROM Applicant
+WHERE applicantStatus = 4;

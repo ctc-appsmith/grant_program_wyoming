@@ -1,0 +1,5 @@
+
+
+SELECT Applicant.ApplicantName, preQualReviews.assignedTo, preQualReviewTypes.reviewType, preQualReviews.reviewStatus, preQualReviews.reviewNotes, preQualReviews.lastChanged, preQualReviews.lastChangedBy, preQualReviews.reviewID
+FROM preQualReviewTypes INNER JOIN (preQualReviews INNER JOIN Applicant ON preQualReviews.applicantID = Applicant.applicantID) ON preQualReviewTypes.requiredReviewID = preQualReviews.reviewType
+ORDER BY preQualReviews.reviewStatus DESC, preQualReviews.reviewID;

@@ -1,0 +1,2 @@
+SELECT COUNT (applicantID) AS countApproved FROM Applicant
+WHERE applicantStatus = 7;

@@ -1,0 +1,2 @@
+DELETE FROM applicantCommunication
+  WHERE recordID = {{appcalllog_tbl.selectedRow.recordID}};

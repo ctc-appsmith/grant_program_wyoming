@@ -1,0 +1,3 @@
+SELECT Applications.applicationName, Reviews.assignedTo, ReviewTypes.reviewType, Reviews.reviewStatus, Reviews.reviewNotes, Reviews.lastChanged, Reviews.lastChangedBy, Reviews.reviewID
+FROM ReviewTypes INNER JOIN (Reviews INNER JOIN Applications ON Reviews.appID = Applications.appID) ON ReviewTypes.requiredReviewID = Reviews.reviewType
+ORDER BY Reviews.reviewStatus DESC , Reviews.reviewID;

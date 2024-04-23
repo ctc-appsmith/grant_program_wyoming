@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "logout",
+    "pageId": "PrequalificationPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "PrequalificationPage_logout",
+  "deleted": false,
+  "gitSyncId": "65bd14d46a813f5d1501a3bc_65cd379d6a813f5d1501db7b"
+}

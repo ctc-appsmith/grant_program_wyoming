@@ -1,0 +1,14 @@
+INSERT INTO applicantCommunication (
+clientID,applicantID,spokeWith,title,commsDate,commsType,subject,notes,staff,lastChangedBy) 
+VALUES (
+	{{data_table.selectedRow.clientID}},
+	{{data_table.selectedRow.applicantID}},
+	'{{(insertInteraction_form.formData || {}).spokeWith}}',
+	'{{(insertInteraction_form.formData || {}).title}}',
+	'{{(insertInteraction_form.formData || {}).commsDate}}',
+	'{{(insertInteraction_form.formData || {}).commsType}}',
+	'{{(insertInteraction_form.formData || {}).subject}}',
+	'{{(insertInteraction_form.formData || {}).notes}}',
+	'{{(insertInteraction_form.formData || {}).staff}}',
+	'{{get_user.data.email}}'
+);

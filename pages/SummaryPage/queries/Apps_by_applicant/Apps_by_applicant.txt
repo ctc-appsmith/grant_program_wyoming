@@ -1,0 +1,6 @@
+SELECT Applicant.ApplicantName AS Applicant, Count(Applications.appID) AS Count
+FROM Applicant INNER JOIN Applications ON Applicant.applicantID = Applications.applicantID
+GROUP BY Applicant.ApplicantName
+ORDER BY Count(Applications.appID);
+
+

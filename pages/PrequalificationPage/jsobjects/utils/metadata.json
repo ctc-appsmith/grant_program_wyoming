@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "PrequalificationPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "PrequalificationPage_utils",
+  "deleted": false,
+  "gitSyncId": "654aaada7cc2433ce3db5200_65b2b2bfbd27da12bbc02c6d"
+}

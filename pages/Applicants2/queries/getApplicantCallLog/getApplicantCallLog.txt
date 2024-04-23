@@ -1,0 +1,3 @@
+SELECT Applicant.ApplicantName, applicantCommunication.*
+FROM applicantCommunication INNER JOIN Applicant ON applicantCommunication.applicantID = Applicant.applicantID
+WHERE applicantCommunication.applicantID = {{data_table.selectedRow.applicantID}};

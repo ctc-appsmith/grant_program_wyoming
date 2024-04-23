@@ -1,0 +1,2 @@
+SELECT COUNT(reviewID) as completeCount from preQualReviews
+WHERE reviewStatus = "Complete";

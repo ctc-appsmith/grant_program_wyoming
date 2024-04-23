@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "PrequalDashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "PrequalDashboard_utils",
+  "deleted": false,
+  "gitSyncId": "654aaada7cc2433ce3db5200_65ba8dd06a813f5d1501991b"
+}

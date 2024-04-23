@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "copyFolderLink_PrequalPage",
+    "pageId": "PrequalificationPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "PrequalificationPage_copyFolderLink_PrequalPage",
+  "deleted": false,
+  "gitSyncId": "65fb23a816a31d53cf0d0515_6604750516a31d53cf0d3944"
+}

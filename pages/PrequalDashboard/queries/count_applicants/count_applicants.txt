@@ -1,0 +1,3 @@
+SELECT COUNT(ApplicantName) as applicantCount FROM Applicant
+WHERE applicantStatus <> 6 OR applicantStatus <> 7 OR applicantStatus <>8
+;

@@ -1,0 +1,5 @@
+INSERT INTO preQualReviews ( applicantID, reviewType, reviewStatus, assignedTo, lastChangedBy )
+SELECT {{lastApplicantID.data[0].applicantID}}, preQualReviewTypes.requiredReviewID, "Pending", "Unassigned", {{get_user.data.email}}
+FROM preQualReviewTypes
+WHERE (preQualReviewTypes.requiredReviewID <>20) AND (preQualReviewTypes.requiredReviewID <>15) AND (preQualReviewTypes.requiredReviewID <>17) AND (preQualReviewTypes.requiredReviewID <>18)
+;

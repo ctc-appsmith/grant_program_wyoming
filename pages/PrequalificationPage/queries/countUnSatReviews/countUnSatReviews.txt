@@ -1,0 +1,16 @@
+
+with subquery as(
+	
+SELECT preQualReviewAnswers.answer, preQualReviewAnswers.applicantID
+FROM preQualReviewAnswers
+WHERE (isnull(preQualReviewAnswers.answer) OR preQualReviewAnswers.answer = "NO") AND preQualReviewAnswers.applicantID= {{data_table.selectedRow.applicantID}}
+	)
+	
+SELECT subquery.applicantID, subquery.answer
+FROM subquery;
+
+
+
+
+
+
