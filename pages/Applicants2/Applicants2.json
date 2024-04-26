@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 910,
+          "bottomRow": 890,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -70,16 +70,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Applicants2_get_user",
-              "name": "get_user",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
               "timeoutInMillisecond": 10000
             }
           ],

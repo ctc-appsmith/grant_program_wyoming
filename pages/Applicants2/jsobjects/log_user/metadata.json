@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "log_user",
+    "pageId": "Applicants2",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Applicants2_log_user",
+  "deleted": false,
+  "gitSyncId": "6627f4b616a31d53cf0dacc9_662bf58b16a31d53cf0dccd4"
+}

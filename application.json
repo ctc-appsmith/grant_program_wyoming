@@ -51,6 +51,10 @@
     {
       "id": "Report_Reviews",
       "isDefault": false
+    },
+    {
+      "id": "Report_Reviews Copy",
+      "isDefault": false
     }
   ],
   "viewMode": false,

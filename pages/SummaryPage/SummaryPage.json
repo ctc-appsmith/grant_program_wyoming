@@ -28,18 +28,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "SummaryPage_get_user",
-              "name": "get_user",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "SummaryPage_Apps_by_applicant",
               "name": "Apps_by_applicant",
               "confirmBeforeExecute": false,

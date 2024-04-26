@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
-    "name": "unauth_redirectCopy",
-    "pageId": "Change Password",
+    "name": "logout",
+    "pageId": "Report_Reviews Copy",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Change Password_unauth_redirectCopy",
+  "id": "Report_Reviews Copy_logout",
   "deleted": false,
-  "gitSyncId": "654aaada7cc2433ce3db5200_654d25087cc2433ce3db5f0d"
+  "gitSyncId": "6627f4b616a31d53cf0dacc9_6629652216a31d53cf0db903"
 }

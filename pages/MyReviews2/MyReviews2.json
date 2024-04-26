@@ -112,15 +112,16 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
-              "id": "MyReviews2_get_user",
-              "name": "get_user",
+              "id": "MyReviews2_unauth_redirect.redirect",
+              "name": "unauth_redirect.redirect",
+              "collectionId": "MyReviews2_unauth_redirect",
               "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
+              "pluginType": "JS",
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]

@@ -28,28 +28,16 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "DailyPreQualReport_Reviews_Report",
-              "name": "Reviews_Report",
+              "id": "DailyPreQualReport_DailyPreQualUpdate",
+              "name": "DailyPreQualUpdate",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "DailyPreQualReport_get_user",
-              "name": "get_user",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "DailyPreQualReport_DailyPreQualUpdate",
-              "name": "DailyPreQualUpdate",
+              "id": "DailyPreQualReport_Reviews_Report",
+              "name": "Reviews_Report",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

@@ -3,7 +3,8 @@ export default {
 		try {
 			await get_user.run();
 			// do other things here
-			//showAlert(`${}`, 'success')
+			// showAlert("get_user ran", 'success')
+			// return get_user.data
 		} catch (err) {
 			if (get_user.data.code == 401) {
 				showAlert(`User is not authenticated or session has expired.`, 'warning')
@@ -12,8 +13,11 @@ export default {
 				showAlert(`${err.message}!`, 'error')
 				showAlert(`${get_user.responseMeta.statusCode}`, 'error')
 				showAlert(`${get_user.data.msg}`, 'error')
+				console.log(`${err.message}!`, 'error')
+				console.log(`${get_user.responseMeta.statusCode}`, 'error')
+				console.log(`${get_user.data.msg}`, 'error')
 			};
-			navigateTo('Login Page');
+			// navigateTo('Login Page');
 		}
 	}
 }

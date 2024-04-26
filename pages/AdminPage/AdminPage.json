@@ -203,16 +203,6 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "AdminPage_get_user",
-              "name": "get_user",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "appsmith.store.access_token"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "AdminPage_unauth_redirect.redirect",
               "name": "unauth_redirect.redirect",
               "collectionId": "AdminPage_unauth_redirect",
