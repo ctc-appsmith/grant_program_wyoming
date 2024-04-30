@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE Applicant SET\n\t\tApplicantName = '{{update_form.fieldState.ApplicantName.isVisible ? update_form.formData.ApplicantName : update_form.sourceData.ApplicantName}}',\t\n\t\t\tapplicantStatus = '{{update_form.fieldState.applicantStatus.isVisible ? update_form.formData.applicantStatus : update_form.sourceData.applicantStatus}}',\t\n\t\tapplicantAddress = '{{update_form.fieldState.applicantAddress.isVisible ? update_form.formData.applicantAddress : update_form.sourceData.applicantAddress}}',\n\t\tprimaryFirstName = '{{update_form.fieldState.primaryFirstName.isVisible ? update_form.formData.primaryFirstName : update_form.sourceData.primaryFirstName}}',\n\t\tprimaryLastName = '{{update_form.fieldState.primaryLastName.isVisible ? update_form.formData.primaryLastName : update_form.sourceData.primaryLastName}}',\n\t\tprimaryTitle = '{{update_form.fieldState.primaryTitle.isVisible ? update_form.formData.primaryTitle : update_form.sourceData.primaryTitle}}',\n \tprimaryEmail = '{{update_form.fieldState.primaryEmail.isVisible ? update_form.formData.primaryEmail : update_form.sourceData.primaryEmail}}',\n\t\tprimaryPhone = '{{update_form.fieldState.primaryPhone.isVisible ? update_form.formData.primaryPhone : update_form.sourceData.primaryPhone}}',\n\t\taorFirstName = '{{update_form.fieldState.aorFirstName.isVisible ? update_form.formData.aorFirstName : update_form.sourceData.aorFirstName}}',\n\t\taorLastName = '{{update_form.fieldState.aorLastName.isVisible ? update_form.formData.aorLastName : update_form.sourceData.aorLastName}}',\n\t\taorTitle = '{{update_form.fieldState.aorTitle.isVisible ? update_form.formData.aorTitle : update_form.sourceData.aorTitle}}',\n\t\taorEmail = '{{update_form.fieldState.aorEmail.isVisible ? update_form.formData.aorEmail : update_form.sourceData.aorEmail}}',\n\t\taorPhone = '{{update_form.fieldState.aorPhone.isVisible ? update_form.formData.aorPhone : update_form.sourceData.aorPhone}}',\n\t\tamplifund_appID = '{{update_form.fieldState.amplifund_appID.isVisible ? update_form.formData.amplifund_appID : update_form.sourceData.amplifund_appID}}',\n\t\tamplifund_appOrganization = '{{update_form.fieldState.amplifund_appOrganization.isVisible ? update_form.formData.amplifund_appOrganization : update_form.sourceData.amplifund_appOrganization}}',\n\t\tamplifund_projectName = '{{update_form.fieldState.amplifund_projectName.isVisible ? update_form.formData.amplifund_projectName : update_form.sourceData.amplifund_projectName}}',\n\t\tfolderLink = '{{update_form.fieldState.folderLink.isVisible ? update_form.formData.folderLink : update_form.sourceData.folderLink}}',\n\t\tcuringDate = '{{update_form.fieldState.curingDate.isVisible ? update_form.formData.curingDate : update_form.sourceData.curingDate}}',\n\t\tlastChangedBy = '{{get_user.data.email}}'\nWHERE applicantID = {{data_table.selectedRow.applicantID}};",
+      "body": "UPDATE Applicant SET\n\t\tApplicantName = '{{update_form.fieldState.ApplicantName.isVisible ? update_form.formData.ApplicantName : update_form.sourceData.ApplicantName}}',\t\n\t\t\tapplicantStatus = '{{update_form.fieldState.applicantStatus.isVisible ? update_form.formData.applicantStatus : update_form.sourceData.applicantStatus}}',\t\n\t\tapplicantAddress = '{{update_form.fieldState.applicantAddress.isVisible ? update_form.formData.applicantAddress : update_form.sourceData.applicantAddress}}',\n\t\tprimaryFirstName = '{{update_form.fieldState.primaryFirstName.isVisible ? update_form.formData.primaryFirstName : update_form.sourceData.primaryFirstName}}',\n\t\tprimaryLastName = '{{update_form.fieldState.primaryLastName.isVisible ? update_form.formData.primaryLastName : update_form.sourceData.primaryLastName}}',\n\t\tprimaryTitle = '{{update_form.fieldState.primaryTitle.isVisible ? update_form.formData.primaryTitle : update_form.sourceData.primaryTitle}}',\n \tprimaryEmail = '{{update_form.fieldState.primaryEmail.isVisible ? update_form.formData.primaryEmail : update_form.sourceData.primaryEmail}}',\n\t\tprimaryPhone = '{{update_form.fieldState.primaryPhone.isVisible ? update_form.formData.primaryPhone : update_form.sourceData.primaryPhone}}',\n\t\tacoFirstName = '{{update_form.fieldState.acoFirstName.isVisible ? update_form.formData.acoFirstName : update_form.sourceData.acoFirstName}}',\n\t\tacoLastName = '{{update_form.fieldState.acoLastName.isVisible ? update_form.formData.acoLastName : update_form.sourceData.acoLastName}}',\n\t\tacoEmail = '{{update_form.fieldState.acoEmail.isVisible ? update_form.formData.acoEmail : update_form.sourceData.acoEmail}}',\n\t\tacoPhone = '{{update_form.fieldState.acoPhone.isVisible ? update_form.formData.acoPhone : update_form.sourceData.acoPhone}}',\n\t\tsalesforceID = '{{update_form.fieldState.salesforceID.isVisible ? update_form.formData.salesforceID : update_form.sourceData.salesforceID}}',\n\t\tfolderLink = '{{update_form.fieldState.folderLink.isVisible ? update_form.formData.folderLink : update_form.sourceData.folderLink}}',\n\t\tcuringDate = '{{update_form.fieldState.curingDate.isVisible ? update_form.formData.curingDate : update_form.sourceData.curingDate}}',\n\t\talternativeContactFirstName = '{{update_form.fieldState.alternativeContactFirstName.isVisible ? update_form.formData.alternativeContactFirstName : update_form.sourceData.alternativeContactFirstName}}',\n\t\talternativeContactLastName = '{{update_form.fieldState.alternativeContactLastName.isVisible ? update_form.formData.alternativeContactLastName : update_form.sourceData.alternativeContactLastName}}',\n\t\talternativeContactTitle = '{{update_form.fieldState.alternativeContactTitle.isVisible ? update_form.formData.alternativeContactTitle : update_form.sourceData.alternativeContactTitle}}',\n\t\talternativeContactPhone = '{{update_form.fieldState.alternativeContactPhone.isVisible ? update_form.formData.alternativeContactPhone : update_form.sourceData.alternativeContactPhone}}',\n\t\talternativeContactEmail = '{{update_form.fieldState.alternativeContactEmail.isVisible ? update_form.formData.alternativeContactEmail : update_form.sourceData.alternativeContactEmail}}',\n\t\tauthorizedCertifying = '{{update_form.fieldState.authorizedCertifying.isVisible ? update_form.formData.authorizedCertifying : update_form.sourceData.authorizedCertifying}}',\n\t\tSAMgovRegistration = '{{update_form.fieldState.SAMgovRegistration.isVisible ? update_form.formData.SAMgovRegistration : update_form.sourceData.SAMgovRegistration}}',\n\t\tstateRegistration = '{{update_form.fieldState.stateRegistration.isVisible ? update_form.formData.stateRegistration : update_form.sourceData.stateRegistration}}',\n\t\tlastChangedBy = '{{get_user.data.email}}'\nWHERE applicantID = {{data_table.selectedRow.applicantID}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,7 +27,11 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
@@ -35,23 +39,28 @@
       "data_table.selectedRow.applicantID",
       "get_user.data.email",
       "update_form.fieldState.ApplicantName.isVisible ? update_form.formData.ApplicantName : update_form.sourceData.ApplicantName",
-      "update_form.fieldState.amplifund_appID.isVisible ? update_form.formData.amplifund_appID : update_form.sourceData.amplifund_appID",
-      "update_form.fieldState.amplifund_appOrganization.isVisible ? update_form.formData.amplifund_appOrganization : update_form.sourceData.amplifund_appOrganization",
-      "update_form.fieldState.amplifund_projectName.isVisible ? update_form.formData.amplifund_projectName : update_form.sourceData.amplifund_projectName",
-      "update_form.fieldState.aorEmail.isVisible ? update_form.formData.aorEmail : update_form.sourceData.aorEmail",
-      "update_form.fieldState.aorFirstName.isVisible ? update_form.formData.aorFirstName : update_form.sourceData.aorFirstName",
-      "update_form.fieldState.aorLastName.isVisible ? update_form.formData.aorLastName : update_form.sourceData.aorLastName",
-      "update_form.fieldState.aorPhone.isVisible ? update_form.formData.aorPhone : update_form.sourceData.aorPhone",
-      "update_form.fieldState.aorTitle.isVisible ? update_form.formData.aorTitle : update_form.sourceData.aorTitle",
+      "update_form.fieldState.SAMgovRegistration.isVisible ? update_form.formData.SAMgovRegistration : update_form.sourceData.SAMgovRegistration",
+      "update_form.fieldState.acoEmail.isVisible ? update_form.formData.acoEmail : update_form.sourceData.acoEmail",
+      "update_form.fieldState.acoFirstName.isVisible ? update_form.formData.acoFirstName : update_form.sourceData.acoFirstName",
+      "update_form.fieldState.acoLastName.isVisible ? update_form.formData.acoLastName : update_form.sourceData.acoLastName",
+      "update_form.fieldState.acoPhone.isVisible ? update_form.formData.acoPhone : update_form.sourceData.acoPhone",
+      "update_form.fieldState.alternativeContactEmail.isVisible ? update_form.formData.alternativeContactEmail : update_form.sourceData.alternativeContactEmail",
+      "update_form.fieldState.alternativeContactFirstName.isVisible ? update_form.formData.alternativeContactFirstName : update_form.sourceData.alternativeContactFirstName",
+      "update_form.fieldState.alternativeContactLastName.isVisible ? update_form.formData.alternativeContactLastName : update_form.sourceData.alternativeContactLastName",
+      "update_form.fieldState.alternativeContactPhone.isVisible ? update_form.formData.alternativeContactPhone : update_form.sourceData.alternativeContactPhone",
+      "update_form.fieldState.alternativeContactTitle.isVisible ? update_form.formData.alternativeContactTitle : update_form.sourceData.alternativeContactTitle",
       "update_form.fieldState.applicantAddress.isVisible ? update_form.formData.applicantAddress : update_form.sourceData.applicantAddress",
       "update_form.fieldState.applicantStatus.isVisible ? update_form.formData.applicantStatus : update_form.sourceData.applicantStatus",
+      "update_form.fieldState.authorizedCertifying.isVisible ? update_form.formData.authorizedCertifying : update_form.sourceData.authorizedCertifying",
       "update_form.fieldState.curingDate.isVisible ? update_form.formData.curingDate : update_form.sourceData.curingDate",
       "update_form.fieldState.folderLink.isVisible ? update_form.formData.folderLink : update_form.sourceData.folderLink",
       "update_form.fieldState.primaryEmail.isVisible ? update_form.formData.primaryEmail : update_form.sourceData.primaryEmail",
       "update_form.fieldState.primaryFirstName.isVisible ? update_form.formData.primaryFirstName : update_form.sourceData.primaryFirstName",
       "update_form.fieldState.primaryLastName.isVisible ? update_form.formData.primaryLastName : update_form.sourceData.primaryLastName",
       "update_form.fieldState.primaryPhone.isVisible ? update_form.formData.primaryPhone : update_form.sourceData.primaryPhone",
-      "update_form.fieldState.primaryTitle.isVisible ? update_form.formData.primaryTitle : update_form.sourceData.primaryTitle"
+      "update_form.fieldState.primaryTitle.isVisible ? update_form.formData.primaryTitle : update_form.sourceData.primaryTitle",
+      "update_form.fieldState.salesforceID.isVisible ? update_form.formData.salesforceID : update_form.sourceData.salesforceID",
+      "update_form.fieldState.stateRegistration.isVisible ? update_form.formData.stateRegistration : update_form.sourceData.stateRegistration"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

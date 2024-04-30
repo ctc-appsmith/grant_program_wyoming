@@ -1,5 +1,5 @@
 INSERT INTO Applicant (
-clientID,ApplicantName,applicantAddress,primaryFirstName,primaryLastName,primaryTitle,primaryEmail,primaryPhone,aorFirstName,aorLastName,aorTitle,aorEmail,aorPhone,lastChangedBy) 
+clientID,ApplicantName,applicantAddress,primaryFirstName,primaryLastName,primaryTitle,primaryEmail,primaryPhone,authorizedCertifying,acoFirstName,acoLastName,acoEmail,acoPhone,alternativeContactFirstName,alternativeContactLastName,alternativeContactTitle,alternativeContactEmail,alternativeContactPhone,SAMgovRegistration,stateRegistration,salesforceID,folderLink,curingDate,lastChangedBy) 
 VALUES (
 	{{getClients.data[0].clientID}},
 	'{{(insertApplicant_form.formData || {}).ApplicantName}}',
@@ -9,10 +9,20 @@ VALUES (
 	'{{(insertApplicant_form.formData || {}).primaryTitle}}',
 	'{{(insertApplicant_form.formData || {}).primaryEmail}}',
 	'{{(insertApplicant_form.formData || {}).primaryPhone}}',
-	'{{(insertApplicant_form.formData || {}).aorFirstName}}',
-	'{{(insertApplicant_form.formData || {}).aorLastName}}',
-	'{{(insertApplicant_form.formData || {}).aorTitle}}',
-	'{{(insertApplicant_form.formData || {}).aorEmail}}',
-	'{{(insertApplicant_form.formData || {}).aorPhone}}',
+	'{{(insertApplicant_form.formData || {}).authorizedCertifying}}',
+	'{{(insertApplicant_form.formData || {}).acoFirstName}}',
+	'{{(insertApplicant_form.formData || {}).acoLastName}}',
+	'{{(insertApplicant_form.formData || {}).acoEmail}}',
+	'{{(insertApplicant_form.formData || {}).acoPhone}}',
+	'{{(insertApplicant_form.formData || {}).alternativeContactFirstName}}',
+	'{{(insertApplicant_form.formData || {}).alternativeContactLastName}}',
+	'{{(insertApplicant_form.formData || {}).alternativeContactTitle}}',
+	'{{(insertApplicant_form.formData || {}).alternativeContactEmail}}',
+	'{{(insertApplicant_form.formData || {}).alternativeContactPhone}}',
+	'{{(insertApplicant_form.formData || {}).SAMgovRegistration}}',
+	'{{(insertApplicant_form.formData || {}).stateRegistration}}',
+	'{{(insertApplicant_form.formData || {}).salesforceID}}',
+	'{{(insertApplicant_form.formData || {}).folderLink}}',
+	'{{(insertApplicant_form.formData || {}).curingDate}}',
 	'{{get_user.data.email}}'
 );

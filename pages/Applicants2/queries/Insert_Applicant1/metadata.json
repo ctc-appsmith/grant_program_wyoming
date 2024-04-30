@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO Applicant (\nclientID,ApplicantName,applicantAddress,primaryFirstName,primaryLastName,primaryTitle,primaryEmail,primaryPhone,aorFirstName,aorLastName,aorTitle,aorEmail,aorPhone,lastChangedBy) \nVALUES (\n\t{{getClients.data[0].clientID}},\n\t'{{(insertApplicant_form.formData || {}).ApplicantName}}',\n\t'{{(insertApplicant_form.formData || {}).applicantAddress}}',\n\t'{{(insertApplicant_form.formData || {}).primaryFirstName}}',\n\t'{{(insertApplicant_form.formData || {}).primaryLastName}}',\n\t'{{(insertApplicant_form.formData || {}).primaryTitle}}',\n\t'{{(insertApplicant_form.formData || {}).primaryEmail}}',\n\t'{{(insertApplicant_form.formData || {}).primaryPhone}}',\n\t'{{(insertApplicant_form.formData || {}).aorFirstName}}',\n\t'{{(insertApplicant_form.formData || {}).aorLastName}}',\n\t'{{(insertApplicant_form.formData || {}).aorTitle}}',\n\t'{{(insertApplicant_form.formData || {}).aorEmail}}',\n\t'{{(insertApplicant_form.formData || {}).aorPhone}}',\n\t'{{get_user.data.email}}'\n);",
+      "body": "INSERT INTO Applicant (\nclientID,ApplicantName,applicantAddress,primaryFirstName,primaryLastName,primaryTitle,primaryEmail,primaryPhone,authorizedCertifying,acoFirstName,acoLastName,acoEmail,acoPhone,alternativeContactFirstName,alternativeContactLastName,alternativeContactTitle,alternativeContactEmail,alternativeContactPhone,SAMgovRegistration,stateRegistration,salesforceID,folderLink,curingDate,lastChangedBy) \nVALUES (\n\t{{getClients.data[0].clientID}},\n\t'{{(insertApplicant_form.formData || {}).ApplicantName}}',\n\t'{{(insertApplicant_form.formData || {}).applicantAddress}}',\n\t'{{(insertApplicant_form.formData || {}).primaryFirstName}}',\n\t'{{(insertApplicant_form.formData || {}).primaryLastName}}',\n\t'{{(insertApplicant_form.formData || {}).primaryTitle}}',\n\t'{{(insertApplicant_form.formData || {}).primaryEmail}}',\n\t'{{(insertApplicant_form.formData || {}).primaryPhone}}',\n\t'{{(insertApplicant_form.formData || {}).authorizedCertifying}}',\n\t'{{(insertApplicant_form.formData || {}).acoFirstName}}',\n\t'{{(insertApplicant_form.formData || {}).acoLastName}}',\n\t'{{(insertApplicant_form.formData || {}).acoEmail}}',\n\t'{{(insertApplicant_form.formData || {}).acoPhone}}',\n\t'{{(insertApplicant_form.formData || {}).alternativeContactFirstName}}',\n\t'{{(insertApplicant_form.formData || {}).alternativeContactLastName}}',\n\t'{{(insertApplicant_form.formData || {}).alternativeContactTitle}}',\n\t'{{(insertApplicant_form.formData || {}).alternativeContactEmail}}',\n\t'{{(insertApplicant_form.formData || {}).alternativeContactPhone}}',\n\t'{{(insertApplicant_form.formData || {}).SAMgovRegistration}}',\n\t'{{(insertApplicant_form.formData || {}).stateRegistration}}',\n\t'{{(insertApplicant_form.formData || {}).salesforceID}}',\n\t'{{(insertApplicant_form.formData || {}).folderLink}}',\n\t'{{(insertApplicant_form.formData || {}).curingDate}}',\n\t'{{get_user.data.email}}'\n);",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,23 +27,37 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
       "(insertApplicant_form.formData || {}).ApplicantName",
-      "(insertApplicant_form.formData || {}).aorEmail",
-      "(insertApplicant_form.formData || {}).aorFirstName",
-      "(insertApplicant_form.formData || {}).aorLastName",
-      "(insertApplicant_form.formData || {}).aorPhone",
-      "(insertApplicant_form.formData || {}).aorTitle",
+      "(insertApplicant_form.formData || {}).SAMgovRegistration",
+      "(insertApplicant_form.formData || {}).acoEmail",
+      "(insertApplicant_form.formData || {}).acoFirstName",
+      "(insertApplicant_form.formData || {}).acoLastName",
+      "(insertApplicant_form.formData || {}).acoPhone",
+      "(insertApplicant_form.formData || {}).alternativeContactEmail",
+      "(insertApplicant_form.formData || {}).alternativeContactFirstName",
+      "(insertApplicant_form.formData || {}).alternativeContactLastName",
+      "(insertApplicant_form.formData || {}).alternativeContactPhone",
+      "(insertApplicant_form.formData || {}).alternativeContactTitle",
       "(insertApplicant_form.formData || {}).applicantAddress",
+      "(insertApplicant_form.formData || {}).authorizedCertifying",
+      "(insertApplicant_form.formData || {}).curingDate",
+      "(insertApplicant_form.formData || {}).folderLink",
       "(insertApplicant_form.formData || {}).primaryEmail",
       "(insertApplicant_form.formData || {}).primaryFirstName",
       "(insertApplicant_form.formData || {}).primaryLastName",
       "(insertApplicant_form.formData || {}).primaryPhone",
       "(insertApplicant_form.formData || {}).primaryTitle",
+      "(insertApplicant_form.formData || {}).salesforceID",
+      "(insertApplicant_form.formData || {}).stateRegistration",
       "getClients.data[0].clientID",
       "get_user.data.email"
     ],
