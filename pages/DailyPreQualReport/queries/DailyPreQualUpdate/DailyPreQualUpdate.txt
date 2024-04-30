@@ -1,3 +1,3 @@
-SELECT Applicant.ApplicantName, Applicant.amplifund_appID, applicationStatusTypes.appStatusType, Applicant.curingDate
+SELECT Applicant.ApplicantName, Applicant.salesforceID, applicationStatusTypes.appStatusType, Applicant.curingDate
 FROM Applicant 
 INNER JOIN applicationStatusTypes ON Applicant.applicantStatus = applicationStatusTypes.appStatusID;

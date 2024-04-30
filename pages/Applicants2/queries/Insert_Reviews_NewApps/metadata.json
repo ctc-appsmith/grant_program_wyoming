@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO preQualReviews ( applicantID, reviewType, reviewStatus, assignedTo, lastChangedBy )\nSELECT {{lastApplicantID.data[0].applicantID}}, preQualReviewTypes.requiredReviewID, \"Pending\", \"Unassigned\", {{get_user.data.email}}\nFROM preQualReviewTypes\nWHERE (preQualReviewTypes.requiredReviewID <>20) AND (preQualReviewTypes.requiredReviewID <>15) AND (preQualReviewTypes.requiredReviewID <>17) AND (preQualReviewTypes.requiredReviewID <>18)\n;",
+      "body": "INSERT INTO preQualReviews ( applicantID, reviewType, reviewStatus, assignedTo, lastChangedBy )\nSELECT {{lastApplicantID.data[0].applicantID}}, preQualReviewTypes.requiredReviewID, \"Pending\", \"Unassigned\", {{get_user.data.email}}\nFROM preQualReviewTypes\nWHERE (preQualReviewTypes.reviewType <>'Assign tasks') AND (preQualReviewTypes.reviewType <>'Curing request') AND (preQualReviewTypes.requiredReviewID <>'CTC input into Salesforce') AND (preQualReviewTypes.requiredReviewID <>'Summit notification');",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,7 +27,11 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
